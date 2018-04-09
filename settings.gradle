@@ -1,6 +1,6 @@
-rootProject.name = 'spring-boot-multi-package-demo'
+rootProject.name = 'spring-boot-multi-package-control'
 
-include 'demo-core'
-include 'demo-package-jar'
-include 'demo-package-war'
-include 'demo-package-war-wildfly'
+include 'control-core'
+include 'control-package-jar'
+include 'control-package-war'
+include 'control-package-war-wildfly'

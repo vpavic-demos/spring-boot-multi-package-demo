@@ -1,0 +1,7 @@
+apply plugin: 'war'
+
+dependencies {
+	compile project(':control-core')
+
+	compile 'org.webjars:webjars-locator-jboss-vfs:0.1.0'
+}

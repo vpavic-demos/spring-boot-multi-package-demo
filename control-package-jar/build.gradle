@@ -1,0 +1,13 @@
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+	compile project(':control-core')
+
+	runtime 'org.springframework.boot:spring-boot-starter-tomcat'
+}
+
+bootJar {
+	mainClassName = 'control.controlApplication'
+
+	launchScript()
+}
