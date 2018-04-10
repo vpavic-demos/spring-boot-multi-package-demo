@@ -2,21 +2,21 @@ package co.sys.concept.adt.context.type;
 
 import java.util.LinkedHashMap;
 
-public abstract class MultiEvent extends Event{
+public abstract class EventSequence extends Event{
 
     private LinkedHashMap<Event, EventCompound> events;
 
-    public MultiEvent(LinkedHashMap<Event, EventCompound> events) {
+    public EventSequence(LinkedHashMap<Event, EventCompound> events) {
         this.events = events;
     }
 
-    public MultiEvent() {
+    public EventSequence() {
         this.events = new LinkedHashMap<>();
     }
 
-    public MultiEvent(Event event) {
+    public EventSequence(Event event) {
         this.events = new LinkedHashMap<>();
-        this.events.put(event, new EventCompound(event));
+        this.events.put(event, null);
     }
 
     public LinkedHashMap<Event, EventCompound> getEvents() {

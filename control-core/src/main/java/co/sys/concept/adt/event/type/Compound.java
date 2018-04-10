@@ -2,16 +2,19 @@ package co.sys.concept.adt.event.type;
 
 import co.sys.concept.adt.state.type.i.Sum;
 
-public interface Compound<E, M> {
+import java.util.Map;
+import java.util.Optional;
 
-    Sum<E, Sum<E, M>> getOrGetSum();
+public interface Compound<E, M> {
 
     Compound set(Compound<E, M> compound);
 
-    Compound set(E o, Sum<E, Sum<E, M>> c);
+    Compound set(Map<E, M> m);
 
-    Compound set(E o);
+    Compound set(Sum<Map<E, M>, Sum<E, M>> f);
 
-    Compound set(Sum<E, Sum<E, M>> c);
+    Optional<? super E> getAtom();
+
+    Optional<? super Map<E, M>> getCompound();
 
 }
