@@ -1,0 +1,12 @@
+apply plugin: 'war'
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+	compile project(':control-core')
+
+	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+}
+
+bootWar {
+	mainClassName = 'control.controlApplication'
+}
