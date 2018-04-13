@@ -1,6 +1,6 @@
 package co.sys.concept.adt.context;
 
-import co.sys.concept.adt.state.type.i.Sum;
+import co.sys.concept.adt.state.type.Sum;
 
 import java.util.Optional;
 

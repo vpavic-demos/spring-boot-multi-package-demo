@@ -1,4 +1,4 @@
-package co.sys.concept.adt.event.type;
+package co.sys.concept.adt.event.type.t;
 
 import co.sys.concept.adt.context.type.Event;
 

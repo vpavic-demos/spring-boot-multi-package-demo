@@ -1,7 +1,7 @@
 package co.sys.concept.adt.context;
 
-import co.sys.concept.adt.event.type.Compound;
-import co.sys.concept.adt.state.type.i.Sum;
+import co.sys.concept.adt.event.type.i.Compound;
+import co.sys.concept.adt.state.type.Sum;
 
 import java.util.Map;
 import java.util.Optional;
